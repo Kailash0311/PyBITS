@@ -2,7 +2,6 @@ $(document).ready(function(){
 $('#myCarousel').owlCarousel({
     loop:true,
     margin:10,
-    nav:true,
     responsive:{
         0:{
             items:1
@@ -13,7 +12,8 @@ $('#myCarousel').owlCarousel({
         1000:{
             items:1
         }
-    }
+    },
+    autoHeight: true
 })
 
 $(".schedule-tab").click(function(e){
@@ -35,6 +35,10 @@ $(".code-of-conduct-tab").click(function(e){
 $(".about-tab").click(function(e){
     e.preventDefault();
     $('#myCarousel').trigger("to.owl.carousel", [5, 750, true]);
+});
+$(".home-tab").click(function(e){
+    e.preventDefault();
+    $('#myCarousel').trigger("to.owl.carousel", [0, 750, true]);
 });
 
 });
