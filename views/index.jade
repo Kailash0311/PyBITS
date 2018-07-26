@@ -8,6 +8,7 @@ html
 
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     //- bootstrap css 
+    
     link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous")
 
     //-  jQuery, Popper.js, bootstrap js respectively 
@@ -27,8 +28,10 @@ html
 
     link(rel="stylesheet", href="/stylesheets/style.css")
     link(rel="stylesheet", href="/stylesheets/schedule.css")
+    link(rel="stylesheet", href="/stylesheets/img-slider.css")
     //- link(rel="stylesheet", href="/stylesheets/bootstrap.min.js")  
     script(src='/javascripts/main.js')
+
 
   body
     //- main div
@@ -272,6 +275,16 @@ html
             div.owl-item
               div.item 
                 h1 Proposal
+
+                div.item(style="padding-top: 250px !important;")
+                .container
+                  .row.mb100
+                    .col-md-3  
+                    .col-md-3
+                      a(href="#")
+                        img(style="display: inline !important; float: left;" src="/images/pdf-ico.png", alt="").image-speaker
+                    .col-md-6.s-name <br><br>Download Brochure
+                
                 div.bottom-nav
                   ul.list-inline
                       li.list-inline-item
@@ -289,6 +302,66 @@ html
             div.owl-item
               div.item 
                 h1 Highlights
+                br
+                //- start
+                .ScrollStyle
+
+                  .container
+                    
+                    
+                    .responsive
+                      .gallery
+                        a(target="_blank", href="images/img_5terre.jpg")
+                          img(src="images/img_5terre.jpg", alt="Cinque Terre", width="600", height="400")
+                        |     
+                        .desc2 Add a description of the image here
+
+                    
+                    .responsive
+                      .gallery
+                        a(target="_blank", href="images/img_5terre.jpg")
+                          img(src="images/img_5terre.jpg", alt="Cinque Terre", width="600", height="400")
+                        |     
+                        .desc2 Add a description of the image here
+
+                    
+                    .responsive
+                      .gallery
+                        a(target="_blank", href="images/img_5terre.jpg")
+                          img(src="images/img_5terre.jpg", alt="Cinque Terre", width="600", height="400")
+                        |     
+                        .desc2 Add a description of the image here
+
+                    
+                    .responsive
+                      .gallery
+                        a(target="_blank", href="images/img_forest.jpg")
+                          img(src="images/img_forest.jpg", alt="Forest", width="600", height="400")
+                        |     
+                        .desc2 Add a description of the image here
+
+                    
+                    .responsive
+                      .gallery
+                        a(target="_blank", href="images/img_forest.jpg")
+                          img(src="images/img_forest.jpg", alt="Northern Lights", width="600", height="400")
+                        |     
+                        .desc2 Add a description of the image here
+
+                    
+                    .responsive
+                      .gallery
+                        a(target="_blank", href="images/img_forest.jpg")
+                          img(src="images/img_forest.jpg", alt="Mountains", width="600", height="400")
+                        |     
+                        .desc2 Add a description of the image here
+                    .clearfix
+
+
+
+                //- end
+
+
                 div.bottom-nav
                   ul.list-inline
                       li.list-inline-item
